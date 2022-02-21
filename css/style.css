@@ -1,0 +1,137 @@
+html{
+  box-sizing: border-box;
+  font-size: 62.5%;
+  
+}
+*, *::before, *::after{
+  box-sizing: inherit;
+}
+
+body{
+  background: white
+
+}
+
+.logo{
+  position: absolute;
+  width: 50px;
+  height: 77.21px;
+  left: 1.5%;
+  top: 3%;
+}
+
+.titulo {
+  position: absolute;
+  left: calc(50% - 846px/3);
+  top: 3%;
+
+  font-family: Pavanam;
+  font-weight: bold;
+  font-size: 70px;
+  display: flex;
+  align-items: center;
+  text-align: center;  
+  color: #090160;  
+}
+
+.titulo2 {
+  position: absolute;
+  left: calc(50% - 846px/3);
+  top: 3%;
+
+  font-family: Pavanam;
+  font-weight: bold;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;  
+  color: #090160;  
+}
+
+
+.btn-iniciar{
+  position: absolute;
+  width: 300px;
+  height: 122px;
+  left: calc(50% - 300px/3);
+  top: 30%;
+
+  font-family: 'Oxygen Mono', monospace;
+  font-weight: bold;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  color: #FFFFFF;
+
+  background: #1963A8;
+  border: 5px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 25px;
+}
+
+.btn-agregar{
+  position: absolute;
+  width: 225px;
+  height: 90px;
+  left: calc(50% - 190px/3);
+  top: 55%;
+
+
+  font-family: 'Oxygen Mono', monospace;
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #1963A8;
+  
+  background: #FFFFFF;
+  border: 5px solid #1963A8;
+  box-sizing: border-box;
+  border-radius: 20px;
+
+}
+
+.horca-dibujo{
+  position: absolute;
+  width: 350px;
+  height: 310.86px;
+  top: 44%;
+  left: 0%;
+}
+
+#btn:hover{
+  background-color: #FFFFFF;
+  border: 5px solid #1963A8;
+  color: #1963A8;
+  cursor: pointer;
+}
+
+#btn-2:hover{
+  background-color: #1963A8;
+  border: 5px solid #FFFFFF;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.footer{
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  align-items: center;
+  text-align: center;
+  font-family: 'Oxygen Mono', monospace;
+  font-weight: bold;
+  color: #090160;
+  font-size: 15px;
+  background-color: #c8d4d4;
+
+}
+
+.logo-footer{
+  height: 3%;
+  width: 3%;
+}

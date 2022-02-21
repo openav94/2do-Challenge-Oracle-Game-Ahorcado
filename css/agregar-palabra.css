@@ -1,0 +1,159 @@
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    
+  }
+  *, *::before, *::after{
+    box-sizing: inherit;
+  }
+  
+  body{
+    background: white
+  
+  }
+  
+  .logo{
+    position: absolute;
+    width: 50px;
+    height: 77.21px;
+    left: 1.5%;
+    top: 3%;
+  }
+  
+  .titulo {
+    position: absolute;
+    left: calc(50% - 846px/3);
+    top: 3%;
+  
+    font-family: Pavanam;
+    font-weight: bold;
+    font-size: 70px;
+    display: flex;
+    align-items: center;
+    text-align: center;  
+    color: #090160;  
+  }
+  
+  
+
+  .inp-palabra{
+    position: absolute;
+    width: 300px;
+    height: 60px;
+    left: 30%;
+    top: 50%;
+  
+    font-family: 'Oxygen Mono', monospace;
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  
+  .btn-iniciar2{
+    position: absolute;
+    width: 200px;
+    height: 60px;
+    left: 70%;
+    top: 70%;
+  
+    font-family: 'Oxygen Mono', monospace;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    color: #FFFFFF;
+  
+    background: #1963A8;
+    border: 5px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 25px;
+  }
+  
+  .btn-guardar{
+    position: absolute;
+    width: 150px;
+    height: 60px;
+    left: 30%;
+    top: 70%;
+  
+    font-family: 'Oxygen Mono', monospace;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    color: #FFFFFF;
+  
+    background: #1963A8;
+    border: 5px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 25px;
+  }
+  
+  .btn-cancelar{
+    position: absolute;
+    width: 150px;
+    height: 60px;
+    left: 50%;
+    top: 70%;
+  
+  
+    font-family: 'Oxygen Mono', monospace;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #1963A8;
+    
+    background: #FFFFFF;
+    border: 5px solid #1963A8;
+    box-sizing: border-box;
+    border-radius: 20px;
+  
+  }
+  
+  .horca-dibujo{
+    position: absolute;
+    width: 350px;
+    height: 310.86px;
+    top: 44%;
+    left: 0%;
+  }
+  
+  #btn:hover{
+    background-color: #FFFFFF;
+    border: 5px solid #1963A8;
+    color: #1963A8;
+    cursor: pointer;
+  }
+  
+  #btn-2:hover{
+    background-color: #1963A8;
+    border: 5px solid #FFFFFF;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+  
+  .footer{
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    align-items: center;
+    text-align: center;
+    font-family: 'Oxygen Mono', monospace;
+    font-weight: bold;
+    color: #090160;
+    font-size: 15px;
+    background-color: #c8d4d4;
+  
+  }
+
+  .logo-footer{
+      height: 3%;
+      width: 3%;
+  }
