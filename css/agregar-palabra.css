@@ -28,12 +28,14 @@ html{
     font-family: Pavanam;
     font-weight: bold;
     font-size: 70px;
-    display: flex;
     align-items: center;
     text-align: center;  
     color: #090160;  
   }
   
+  button{
+    align-items: center;
+  }
   
 
   .inp-palabra{
@@ -59,9 +61,6 @@ html{
     font-family: 'Oxygen Mono', monospace;
     font-weight: bold;
     font-size: 20px;
-    display: flex;
-    align-items: center;
-    align-content: center;
     text-align: center;
     color: #FFFFFF;
   
@@ -81,10 +80,6 @@ html{
     font-family: 'Oxygen Mono', monospace;
     font-weight: bold;
     font-size: 20px;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    text-align: center;
     color: #FFFFFF;
   
     background: #1963A8;
@@ -104,9 +99,6 @@ html{
     font-family: 'Oxygen Mono', monospace;
     font-weight: bold;
     font-size: 20px;
-    display: flex;
-    align-items: center;
-    text-align: center;
     color: #1963A8;
     
     background: #FFFFFF;

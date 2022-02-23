@@ -20,12 +20,9 @@ body{
   top: 3%;
 }
 
-canvas{
-  border: 5px;
-  border-color: #090160;
+button{
+  align-items: center;
 }
-
-
 
 .nuevo-juego{
   position: absolute;
@@ -37,10 +34,6 @@ canvas{
   font-family: 'Oxygen Mono', monospace;
   font-weight: bold;
   font-size: 20px;
-  display: flex;
-  align-items: center;
-  align-content: center;
-  text-align: center;
   color: #FFFFFF;
  
   background: #1963A8;
@@ -60,10 +53,6 @@ canvas{
   font-family: 'Oxygen Mono', monospace;
   font-weight: bold;
   font-size: 20px;
-  display: flex;
-  align-items: center;
-  align-content: center;
-  text-align: center;
   color: #1963A8;   
    
   background: #FFFFFF;
