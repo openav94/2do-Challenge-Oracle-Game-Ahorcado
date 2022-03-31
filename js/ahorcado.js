@@ -1,7 +1,6 @@
 const d = document;
 let btnRendirse = document.querySelector(".rendirse");
 let btnIniciarJuego = document.querySelector(".iniciar-juego");
-var mensaje = "";
 let palabrasSecretas = ['JAVA','JAVASCRIPT','PROGRAMAR','CODE','PROGRAMACION', 'MEXICO','REPUBLICA','DOMINICANA','COMPUTADORA','SOFTWARE','ALURA','BRASIL','ORACLE','CSS','ABACO','MONITOR','CASE','DISCO','MALWARE','VIRUS','BIT','BYTE','PHYTON','DATOS'];
 const posibilidades = 8;
 let aleatorio = 0;
@@ -14,8 +13,18 @@ let finJuego = false;
 //Evento clic btnIniciarJuego
 btnIniciarJuego.addEventListener("click", () => {
     iniciarJuego(); // funcion creada
+    
 });
 
+//Evento clic btnRendirse
+btnRendirse.addEventListener("click",() => {
+    rendirseMensaje();
+    eliminarTeclaArriba();
+
+})
+
+//Evento inicio de pantalla
+window.addEventListener("load",inicioMensaje());
 
 //Funcion para iniciar el juego
 function iniciarJuego (seleccionarPalabra = null){
@@ -144,12 +153,30 @@ function resetearJuego(){
     
 }
 
-
-/*function inicioMensaje(m){
-    //Mensaje de inicio
-    var txt = document.querySelector("canvas").getContext("2d");
+//Mensaje de inicio 
+function inicioMensaje(){
+    var txt = document.querySelector("#ahorcado").getContext("2d");
     txt.font = "50px Arial";
-    txt.fillStyle = "#045819";
-    txt.fillText(m,200,250);
+    txt.fillStyle = "#2B5F8F";
+    const m = "ADIVINA LA PALABRA SECRETA"
+    txt.fillText(m,125,200);
+    txt.font = "40px Arial";
+    txt.fillStyle = "#2B8F68 ";
+    const m1 = "DALE CLICK A INICIAR JUEGO"
+    txt.fillText(m1,210,260);
+    txt.font = "25px Arial";
+    txt.fillStyle = "#AC250D";
+    const m2 = "SOLO TENDRAS 9 INTENTOS PARA ADIVINAR LA PALABRA"
+    txt.fillText(m2,150,310);
 
-}*/
+}
+
+//Mensaje de al rendirse
+function rendirseMensaje(){
+    var txt = document.querySelector("#ahorcado").getContext("2d");
+    txt.font = "50px Arial";
+    txt.fillStyle = "#AC250D";
+    const m = "ME RINDO, HE PERDIDO"
+    txt.fillText(m,350,150);
+
+}

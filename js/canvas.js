@@ -28,6 +28,10 @@ function limpiarCanvas(){
     indiceLetraIncorrecta = 0;
     pincel.clearRect (0,0,1000,500);
     pincel.clearRect(10,10,980,480);
+    pincel.fillStyle = "#1963A8";
+    pincel.fillRect(0,0,1000,500); //dimension de pantalla (1000 x 500)
+    pincel.fillStyle = "white";
+    pincel.fillRect(10,10,980,480); //dimension de borde (980 x 480)
     pantalla.scrollIntoView({
         behavior: 'smooth',
         block: 'end'
@@ -58,7 +62,7 @@ function mostrarLetraCorrecta(letra,arregloPosicion){
 
         var txt = document.querySelector("canvas").getContext("2d");
         txt.font = "30px Arial";
-        txt.fillStyle = "#045819";
+        txt.fillStyle = "#2D872E";
         txt.fillText(letra,xInicial,yInicial);
         
         /*pincel.fillStyle = 'green';
@@ -74,13 +78,28 @@ function mostrarLetraErrada(errorLetra){
 
     var txt2 = document.querySelector("canvas").getContext("2d");
     txt2.font = "30px Arial";
-    txt2.fillStyle = "red";
+    txt2.fillStyle = "#AC250D";
     txt2.fillText(errorLetra,xLetraInicialIncorrecta,yLetraInicialIncorrecta);
 
     /*pincel.fillStyle = "red";
     pincel.fillText(errorLetra, xLetraInicialIncorrecta, yLetraInicialIncorrecta);*/
     xLetraInicialIncorrecta = 450;
     indiceLetraIncorrecta++;
+    console.log(indiceLetraIncorrecta);
+
+    contadorIntentos();
+
+}
+
+//Para ir mostrando los intentos fallidos
+function contadorIntentos(){
+    var noIntento = document.querySelector("canvas").getContext("2d");
+    noIntento.font = "50px Arial";
+    noIntento.fillStyle = "#FFFFFF";
+    noIntento.fillText("▄▄",850,30);   
+    noIntento.font = "15px Arial";
+    noIntento.fillStyle = "#AC250D";
+    noIntento.fillText("Intentos: "+ indiceLetraIncorrecta,850,30);
 }
 
 function dibujarAhorcado(aleatorio){
@@ -225,16 +244,16 @@ function mostrarMensajePerdedor(palabraSecreta){
        
     var txt = document.querySelector("#ahorcado").getContext("2d");
     txt.font = "30px Arial";
-    txt.fillStyle = "red";
+    txt.fillStyle = "#8E180C";
     txt.fillText(msjError,xInicial,yInicial);
 
     var txt1 = document.querySelector("#ahorcado").getContext("2d");
     txt1.font = "30px Arial";
-    txt1.fillStyle = "red";
+    txt1.fillStyle = "#B83819";
     txt1.fillText(palabra,xInicial - 100, yInicial + 40);
 }
 
-//funcion para mostrar mensjae al ganador
+//funcion para mostrar mensaje al ganador
 function mostrarMensajeGanador(){
     let msjGanador = "ACABAS DE GANAR";
     let msjGanador2 = "FELICIDADES!!!";
@@ -243,12 +262,12 @@ function mostrarMensajeGanador(){
 
     var txt = document.querySelector("#ahorcado").getContext("2d");
     txt.font = "40px Arial";
-    txt.fillStyle = "green";
+    txt.fillStyle = "#0C9B5D";
     txt.fillText(msjGanador,xInicial,yInicial);
 
     var txt1 = document.querySelector("#ahorcado").getContext("2d");
     txt1.font = "40px Arial";
-    txt1.fillStyle = "green";
+    txt1.fillStyle = "#077A29";
     txt1.fillText(msjGanador2,xInicial + 45 ,yInicial + 45);
 }
 
