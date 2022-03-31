@@ -18,6 +18,7 @@ btnIniciarJuego.addEventListener("click", () => {
 
 //Evento clic btnRendirse
 btnRendirse.addEventListener("click",() => {
+    limpiarCanvas();
     rendirseMensaje();
     eliminarTeclaArriba();
 
@@ -177,6 +178,6 @@ function rendirseMensaje(){
     txt.font = "50px Arial";
     txt.fillStyle = "#AC250D";
     const m = "ME RINDO, HE PERDIDO"
-    txt.fillText(m,350,150);
+    txt.fillText(m,225,250);
 
 }
