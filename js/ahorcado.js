@@ -2,7 +2,7 @@ const d = document;
 let btnRendirse = document.querySelector(".rendirse");
 let btnIniciarJuego = document.querySelector(".iniciar-juego");
 let btnAtras = document.querySelector(".btn-atras");
-let palabrasSecretas = ['JAVA','JAVASCRIPT','PROGRAMAR','CODE','PROGRAMACION', 'MEXICO','REPUBLICA','DOMINICANA','COMPUTADORA','SOFTWARE','ALURA','BRASIL','ORACLE','CSS','ABACO','MONITOR','CASE','DISCO','MALWARE','VIRUS','BIT','BYTE','PHYTON','DATOS'];
+var palabrasSecretas = ['BOLIVIA','VENEZUELA','CUBA','FRANCIA','CHINA', 'MEXICO','DOMINICA','DOMINICANA','HAWAI','BELGICA','COLOMBIA','BRASIL','ARGENTINA','PANAMA','AFRICA','AUSTRALIA','RUSIA','HAITI','JAPON','ISRAEL','ARGELIA','ALEMANIA','BAHAMAS','BOLIVIA'];
 const posibilidades = 8;
 let aleatorio = 0;
 let palabraSecreta;

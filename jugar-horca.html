@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/jugar-horca.css">
     <link rel="stylesheet" href="css/ventanaModal.css">
+    <link rel="stylesheet" href="css/agregar-palabraVM.css">
     <title>Game - Ahorcado</title>
     <link rel="shortcut icon" href="img/jugar.ico" type="image/x-icon">
     <link rel="icon" href="img/jugar.ico" type="image/x-icon">    
@@ -25,6 +26,7 @@
     <section>
       <div style="text-align:center; margin: 50px 0px;">
         <button class="iniciar-juego" id="btn">INICIAR JUEGO</button>
+        <img src="img/boton-agregar.png" class="btn-agregar-palabra">
         <img src="img/ayuda.png" id="ayuda" class="btn-ayuda">
         <img src="img/atras.png" id="ayuda" class="btn-atras">
         <button class="rendirse" id="btn-2">RENDIRSE</button> 
@@ -50,6 +52,22 @@
       </div>
     </div>
 
+    <div class="contenedor-modal2">
+      <div class="modal2 cerrar-modal2">
+        <p class="cerrar2">X</p>
+        <img src="img/boton-agregar.png" alt="">
+        <div class="texto-modal2">
+          <h2 class="titulo-agregar-palabra">Ingresa la palabra que desea agregar</h2>
+          <div class="texto-contenido2">
+            <p>Sólo se puede agregar al juego nombre de paises con menos de 10 caracteres y que no sean nombres compuestos o con espacios, ni con la letra "Ñ".
+            </p>
+            <input type="text" class="agregar-nueva-palabra" id="nueva-palabra" size="10" placeholder = "Ingrese la nueva palabra"autofocus maxlength="10">
+            <button class="btn" id="btn-guardar">Guardar</button>  
+          </div>
+        </div>
+      </div>
+    </div>
+
     <footer class="footer">
       <div class="info">
         <p class="nombre"><a href="mailto:openav94@gmail.com">&copy; Oscar Misael Peña Victorino</a></p>
@@ -62,5 +80,6 @@
     <script type="text/javascript" src="js/canvas.js"></script>
     <script type="text/javascript" src="js/ahorcado.js"></script>
     <script type="text/javascript" src="js/ventanaModal.js"></script>
+    <script type="text/javascript" src="js/agregar-palabraVM.js"></script>
   </body>
 </html>

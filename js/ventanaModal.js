@@ -21,8 +21,7 @@ cerrar.addEventListener("click", function(){
     },800);
 });
 
-window.addEventListener("click", function(e){
-    console.log(e.target); 
+window.addEventListener("click", function(e){ 
     if(e.target == modalC){
         modal.classList.toggle("cerrar-modal");
         setTimeout(function(){

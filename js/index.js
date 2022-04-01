@@ -5,6 +5,3 @@ botonIniciarJuego.addEventListener("click", function(){
     window.location.href = "jugar-horca.html";
 });
 
-botonNuevaPalabra.addEventListener("click", function(){
-    window.location.href = "agregar-palabra.html";
-});
