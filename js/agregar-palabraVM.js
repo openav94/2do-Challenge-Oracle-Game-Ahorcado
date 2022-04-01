@@ -22,7 +22,7 @@ cerrar2.addEventListener("click", function(){
 });
 
 window.addEventListener("click", function(e){
-    if(e.target == modalC){
+    if(e.target == modalC2){
         modal2.classList.toggle("cerrar-modal2");
         setTimeout(function(){
             modalC2.style.opacity = "0";
