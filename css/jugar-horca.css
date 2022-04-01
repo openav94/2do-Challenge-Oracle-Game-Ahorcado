@@ -1,7 +1,7 @@
 html{
   box-sizing: border-box;
   font-size: 62.5%;
-    
+
 }
 *, *::before, *::after{
   box-sizing: inherit;
@@ -61,6 +61,19 @@ button{
   border-radius: 25px;
 }
   
+.btn-atras{
+  position: absolute;
+  left: 78%;
+  top: 2%;
+  height: 4.5%;
+  width: 2.5%;
+}
+
+.btn-atras:hover{
+  cursor: pointer;
+  height: 5%;
+  width: 3%;
+}
     
 #btn:hover{
   background-color: #FFFFFF;

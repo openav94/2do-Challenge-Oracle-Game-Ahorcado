@@ -4,6 +4,7 @@ var botonIniciarJuego = document.querySelector(".btn-iniciar2");
 var nuevaPalabra = document.querySelector("#nueva-palabra");
 var nuevaPalabra2 = document.querySelector(".inp-palabra");
 
+//Evento al presionar el boton Cancelar
 botonCancelar.addEventListener("click", function(){
     nuevaPalabra.value = "";   
     window.location.href = "index.html";

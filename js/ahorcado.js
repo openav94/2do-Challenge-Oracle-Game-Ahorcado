@@ -1,6 +1,7 @@
 const d = document;
 let btnRendirse = document.querySelector(".rendirse");
 let btnIniciarJuego = document.querySelector(".iniciar-juego");
+let btnAtras = document.querySelector(".btn-atras");
 let palabrasSecretas = ['JAVA','JAVASCRIPT','PROGRAMAR','CODE','PROGRAMACION', 'MEXICO','REPUBLICA','DOMINICANA','COMPUTADORA','SOFTWARE','ALURA','BRASIL','ORACLE','CSS','ABACO','MONITOR','CASE','DISCO','MALWARE','VIRUS','BIT','BYTE','PHYTON','DATOS'];
 const posibilidades = 8;
 let aleatorio = 0;
@@ -13,6 +14,7 @@ let finJuego = false;
 //Evento clic btnIniciarJuego
 btnIniciarJuego.addEventListener("click", () => {
     iniciarJuego(); // funcion creada
+    cambiarNombre();
     
 });
 
@@ -21,11 +23,31 @@ btnRendirse.addEventListener("click",() => {
     limpiarCanvas();
     rendirseMensaje();
     eliminarTeclaArriba();
+    cambiarNombre2();
 
-})
+});
 
 //Evento inicio de pantalla
 window.addEventListener("load",inicioMensaje());
+
+//Evento al presionar el boton atras
+btnAtras.addEventListener("click", function(){
+    window.location.href = "index.html";
+})
+
+
+//Funcion para cambiar de nombre el bonton Iniciar Juego
+function cambiarNombre(){
+    var btnIniciarJuego = document.getElementById("btn");
+    btnIniciarJuego.innerHTML = "REINICIAR"; 
+}
+
+function cambiarNombre2(){
+    var btnIniciarJuego2 = document.getElementById("btn");
+    btnIniciarJuego2.innerHTML = "INICIAR JUEGO";
+        
+}
+
 
 //Funcion para iniciar el juego
 function iniciarJuego (seleccionarPalabra = null){

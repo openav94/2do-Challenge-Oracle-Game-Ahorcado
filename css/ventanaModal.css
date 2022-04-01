@@ -1,0 +1,102 @@
+.btn-ayuda{
+    position: absolute;
+    left: 73%;
+    top: 2%;
+    height: 4.5%;
+    width: 2.5%;
+}
+
+.btn-ayuda:hover{
+    cursor: pointer;
+    height: 5%;
+    width: 3%;
+}
+
+.titulo-ayuda{
+    position: absolute;
+    left: 25%;
+    top: 10%;
+    font-family: Pavanam;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+    font-weight: 500;
+
+}
+
+.modal > img{
+    position: absolute;
+    height: 15%;
+    width: 10%;
+    left: 10%;
+    top: 13%;
+}
+
+.contenedor-modal{
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    top:0;
+    left: 0;
+    background: rgb(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.modal{
+    width: 40%;
+    height: 50%;
+    background-image: linear-gradient(to top, #c0cafb 35%, #094560 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1s;
+    transform: translateY(0%);  /*para agregar movimiento*/
+    border-radius: 20px;
+}
+
+.texto-contenido h3{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Pavanam;
+    padding-left: 5%;
+    padding-top: 15%;
+    padding-right: 5%;
+}
+
+.texto-contenido p{
+    font-size: 20px;
+    font-family: Pavanam;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+  
+.cerrar{
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    font-size: 25px;
+    background: #6a0909;
+    color: #FFFFFF;
+    line-height: 25px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+  
+
+
+ 
+.cerrar-modal{
+    transform: translateY(-200%); /*para agregar movimiento*/
+  
+}
